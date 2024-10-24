@@ -22,6 +22,7 @@ const createCategory = async (req, res) => {
   fs.writeFileSync(filePath, JSON.stringify(categories));
   res.json(newCategory);
 };
+
 const deleteCategory = async (req, res) => {
   const filePath = path.join(__dirname, "..", "data", "categories.json");
 

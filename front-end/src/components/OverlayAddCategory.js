@@ -35,7 +35,7 @@ export const AddCategory = ({
         <h6 className="text-sm">{open}</h6>
       </DialogTrigger>
       <DialogContent className="w-[494px] h-[236px]">
-        <DialogHeader className="w-full flex flex-row justify-between items-center">
+        <DialogHeader className="flex flex-row items-center justify-between w-full">
           <DialogTitle>Add Category</DialogTitle>
           <Button
             className="w-fit"
@@ -46,7 +46,7 @@ export const AddCategory = ({
             x
           </Button>
         </DialogHeader>
-        <div className="flex flex-row gap-x-4 justify-between items-center">
+        <div className="flex flex-row items-center justify-between gap-x-4">
           <IconSelector
             categoryIcon={categoryIcon}
             setCategoryIcon={setCategoryIcon}
@@ -55,7 +55,7 @@ export const AddCategory = ({
             type="text"
             value={categoryName}
             placeholder="Name"
-            className="border p-2 rounded w-full "
+            className="w-full p-2 border rounded "
             onChange={(event) => {
               setCategoryName(event.target.value);
             }}
